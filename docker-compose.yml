@@ -1,0 +1,33 @@
+version: '3'
+services: 
+    nginx:
+        build:
+            dockerfile: ./docker/nginx.dockerfile
+            context: .
+        image: paulol/nginx
+        container_name: nginx
+        ports: 
+            - "80:80"
+        networks: 
+            - production-network
+        depends_on:
+            - "node1"
+    mongodb:
+        image: mongo
+        networks:
+            - production-network
+    node1:
+        build:
+            dockerfile: ./docker/node.dockerfile
+            context: .
+        image: paulol/my-game-library
+        container_name: my-game-library-1
+        ports:
+            - "3000"
+        networks:
+            - production-network
+        depends_on:
+            - "mongodb"
+networks:
+    production-network:
+        driver: bridge
