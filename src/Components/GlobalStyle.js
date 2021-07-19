@@ -12,6 +12,6 @@ export const GlobalStyle = createGlobalStyle`
 
 .App {
   height: 100vh;
-  background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0) 0deg, rgba(145, 220, 233, 0.623172) 61.87deg, #4EC7DB 185.62deg, rgba(188, 234, 241, 0.379391) 359.96deg, rgba(255, 255, 255, 0) 360deg), #FFFFFF;
+  background: linear-gradient(180deg, #8FD1DC 0%, rgba(134, 199, 209, 0) 100%), #FFFFFF;
 }
 `

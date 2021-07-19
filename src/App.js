@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import RecentlyPlayed from "./pages/RecentlyPlayed";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
+import AddGame from './pages/AddGame'
 import Page404 from "./pages/Page404";
 
 import { GlobalStyle } from "./Components/GlobalStyle";
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/settings">
             <Settings />
+          </Route>
+          <Route path="/add">
+            <AddGame />
           </Route>
           <Route>
             <Page404 />
