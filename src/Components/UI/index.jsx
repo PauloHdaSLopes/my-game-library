@@ -151,7 +151,47 @@ export const CircleBottomButton = styled(CircleButton)`
   }
 `;
 
-export const Input = styled.input`
-  width: 228px;
-  height: 27px;
+export const LoginTitle = styled.h1`
+  color: #A5A5A5;
+  height: 28px;
+  font-size: 24px;
+  margin-left: 8px;
+  text-align: center;
+  font-size: 36px;
 `;
+
+export const LoginButton = styled.button`
+  background: #8FD1DC;
+  border: 3px solid #A3DAE3;
+  border-radius: 10px;
+  height: 40px;
+  width: 330px;
+  margin-top: 12px;
+  color: #FFFFFF;
+  font-size: 24px;
+`
+
+export const Input = styled.input`
+  width: 310px;
+  height: 40px;
+  background: #DEDEDE;
+  border-radius: 8px;
+  border: none;
+  padding: 0px 10px;
+  border-bottom: ${(props) => props.hasError ? "2px #ee7070 solid" : ""};
+`;
+
+export const Label = styled.label`
+  font-size: 18px;
+  color: #A5A5A5;
+  margin-bottom: 6px;
+`
+
+export const HelperText = styled.p`
+  margin: 0;
+  font-size: 14px;
+  margin-top: 5px;
+  color: red;
+  margin-left: 10px;
+  height: 17px;
+`

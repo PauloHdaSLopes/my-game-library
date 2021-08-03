@@ -1,5 +1,4 @@
 import React from "react";
-// import styled from 'styled-component'
 
 import { Title, ProfilePhoto, ContainerHeader } from "../UI";
 
